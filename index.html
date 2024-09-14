@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Veronika</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <link rel="stylesheet" href="css/main.css">
+    <style>
+        .gallery__left, .gallery__right {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .gallery__item {
+            width: 100%;
+            height: auto;
+        }
+
+        @media (max-width: 768px) {
+            .gallery {
+                flex-direction: column;
+            }
+
+            .gallery__left, .gallery__right {
+                width: 100%;
+            }
+
+            .text-block__h {
+                font-size: 1.5rem;
+            }
+
+            .text-block__p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+
+    <script src="libs/gsap/gsap.min.js" defer></script>
+    <script src="libs/gsap/ScrollTrigger.min.js" defer></script>
+    <script src="libs/gsap/ScrollSmoother.min.js" defer></script>
+    <script src="js/app.js" defer></script>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="content">
+
+            <header class="hero-section">
+                <img data-speed=".6" class="hero" src="img/23456.gif" alt="Alt">
+                <div class="container">
+                    <div data-speed=".75" class="main-header">
+                        <h1 class="main-title">20 </br> 
+							Years </br>
+						tonight</h1>
+                    </div>
+                </div>
+            </header>
+
+            <div class="portfolio">
+                <div class="container">
+                    <main class="gallery">
+
+                        <div data-speed=".9" class="gallery__left">
+
+                            <img class="gallery__item" src="img/work/1.jpg" alt="Alt">
+                            <img class="gallery__item" src="img/work/2.jpg" alt="Alt">
+							<img class="gallery__item" src="img/work/11.gif" alt="Alt">
+                            <img class="gallery__item" src="img/work/6.gif" alt="Alt">
+                            
+
+                            <div class="text-block gallery__item">
+                                <h2 class="text-block__h"> С днем рождения!</h2>
+                                <p class="text-block__p" style="color: white;">Можно было собрать еще тысячу миллионов фотокарточек с тобой и твоими друзьями. Получилось как получилось. </br>
+								Использовать все существующие технологии, чтобы тебя поздравить!</p>
+                            </div>
+
+
+                        </div>
+
+                        <div data-speed="1.1" class="gallery__right">
+
+                            <div class="text-block gallery__item">
+                                <h2 class="text-block__h">С днем рождения</h2>
+                                <p class="text-block__p" style="color: white">
+									Это безумно мало, что мы могли сделать, но на пределе свових возможностей. Ты достойна самых вершин. Данная работа лишь показатель того  каких невероятных высот ты достигла в свои 20 лет. Данная работа выложена в сеть исключительно под этим доменом и никто кроме некоторых твоих друзей никто не видел.
+								</p>
+                            </div>
+
+                            <img class="gallery__item" src="img/work/423.gif" alt="Alt">
+                            <img class="gallery__item" src="img/work/5.png" alt="Alt">
+                            <img class="gallery__item" src="img/work/3.jpg" alt="Alt">
+							<img class="gallery__item" src="img/work/12.gif" alt="Alt">
+                            <img class="gallery__item" src="img/work/123.jpg" alt="Alt">
+							<a href="scroll.html"><button class = 'image-button' class = 'gallery__item'></button></a>
+							
+							
+							
+							
+
+							
+
+                        </div>
+
+                    </main>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
